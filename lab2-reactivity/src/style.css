@@ -1,0 +1,41 @@
+:root {
+  --bg: #f4f1ea;
+  --ink: #1f2430;
+  --accent: #9a7b2f;
+  --accent-dark: #6f561b;
+  --header-bg: #1f2430;
+  --border: #cfc7b4;
+  --row-alt: #ece6d6;
+  --row-hover: #e2d9c0;
+  --muted: #5b5f6b;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #app { min-height: 100vh; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.5;
+}
+
+#app { display: flex; flex-direction: column; }
+
+.site-header { background: var(--header-bg); color: #fff; padding: 20px 32px; }
+.site-header h1 { margin: 0; font-size: 1.6rem; font-weight: 600; }
+.site-header p { margin: 4px 0 0; color: #c9c2ae; font-size: 0.95rem; }
+
+.site-nav { background: var(--accent); }
+.site-nav ul { list-style: none; margin: 0; padding: 0 32px; display: flex; gap: 4px; }
+.site-nav a { display: block; padding: 12px 20px; color: #fff; text-decoration: none; font-weight: 500; }
+.site-nav a:hover { background: var(--accent-dark); }
+.site-nav a.router-link-active { background: var(--accent-dark); box-shadow: inset 0 -3px 0 #fff; }
+
+.site-main { flex: 1; width: 100%; max-width: 1040px; margin: 0 auto; padding: 32px; }
+.site-main h2 { margin-top: 0; }
+
+.site-footer { background: var(--header-bg); color: #c9c2ae; text-align: center; padding: 16px; font-size: 0.9rem; }
+.site-footer p { margin: 0; }
